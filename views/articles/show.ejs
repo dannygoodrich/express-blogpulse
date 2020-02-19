@@ -6,6 +6,20 @@
 
 <p><%= article.content %></p>
 
+
 <hr />
 
+
 <a href="/">&larr; Back Home</a>
+
+<% article.comments.forEach(function(a) { %>
+  <div class="well">
+    <p><%= a.content %></p>
+  </div>
+<% }) %>
+
+<form method="POST" action="/articles/<%= article.id %>/comments">
+  <input type="text" name="comment" placeholder="comment" >
+  <input type="text" name="name" placeholder="name">
+  <button class="btn btn-primary" type="submit">Post Comment</button>
+</form>
