@@ -9,3 +9,8 @@ h2 {
 body {
   background-color: rgb(219, 225, 250);
 }
+
+
+#comment {
+  width: 50%;
+}

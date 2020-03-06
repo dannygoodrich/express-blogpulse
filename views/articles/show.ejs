@@ -13,8 +13,8 @@
 <a href="/">&larr; Back Home</a>
 
 <% article.comments.forEach(function(a) { %>
-  <div class="well">
-    <p><%= a.content %></p>
+  <div class="well" id="comment">
+    <p id="comment"><%= a.content %></p>
   </div>
 <% }) %>
 
